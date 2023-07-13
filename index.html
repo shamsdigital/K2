@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap"
+    />
+  </head>
+  <body>
+    <section class="audi-2nd">
+      <section class="frame-parent">
+        <div class="lean-staffing-and-manual-follo-parent">
+          <div class="lean-staffing-and" data-animate-on-scroll>
+            Manual lead processing creates missed opportunities
+          </div>
+          <div class="concerned-about-an-container" data-animate-on-scroll>
+            <p class="concerned-about-an">
+              The Sales team at Bob Rohrman Kia had no shortage of opportunities Leads were coming in from multiple channels at all times of the day and
+              night, with more than 45% originating during off-hours.
+             
+              <br><br>With rapidly growing lead volume, the sales team was stretched to its limit. Responding to every inbound inquiry while trying to nurture customer
+              relationships was becoming increasingly difficult, Too much time was being spent answering basic questions and chasing unresponsive leads,
+              preventing sales reps from focusing on closing deals.
+             
+              <br><br>Employee frustra tion was growi ng, but what could be done wi thout adding additional headcount?
+             
+            </p>
+            <p class="concerned-about-an"></p>
+            <p class="concerned-about-an">
+              <br>The result? Lead follow-up dwindled to ju st a few days -yet those
+              are precisely the opportunities that become a key source of
+              business when the market begins to cool.
+            </p>
+          </div>
+        </div>
+        <div
+          class="we-were-already-seeing-early-s-parent"
+          data-animate-on-scroll
+        >
+          <div class="we-were-already" data-animate-on-scroll>
+            "We were already seeing early signs of a decline in leads, and with
+            backlogged inventory finally coming in, we needed to make
+            conservative decisions abdut costs - especially overhead and
+            staffing. We're always busy, so this was stretch- ing our sales
+            teams thinner than ever. We needed solutions to help us be more
+            productive and eficient - without adding headcount!”
+          </div>
+          <div class="stephen-powers-vice" data-animate-on-scroll>
+            Stephen Powers, Vice President of Operations McDonald Audi
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

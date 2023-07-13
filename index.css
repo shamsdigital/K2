@@ -1,0 +1,193 @@
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .lean-staffing-and {
+    align-self: stretch;
+    position: relative;
+    line-height: 45px;
+    font-weight: 500;
+    opacity: 0;
+  }
+  
+  .concerned-about-an {
+    margin: 0;
+  }
+  .concerned-about-an-container {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    opacity: 0;
+  }
+
+
+
+
+  .lean-staffing-and.animate {
+    animation: 1s ease 0.2s 1 normal forwards slide-in-top;
+  }
+  .concerned-about-an-container.animate {
+    animation: 1s ease 0.3s 1 normal forwards slide-in-bottom;
+  }
+
+  .we-were-already.animate {
+    animation: 1s ease 0.5s 1 normal forwards slide-in-bottom;
+  }
+
+  .stephen-powers-vice.animate {
+    animation: 1s ease 0.7s 1 normal forwards slide-in-bottom;
+  }
+
+  .we-were-already-seeing-early-s-parent.animate {
+    animation: 1.5s ease 0.2s 1 normal forwards slide-in-bottom;
+  }
+
+
+
+
+  .lean-staffing-and-manual-follo-parent {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xl);
+  }
+  .stephen-powers-vice,
+  .we-were-already {
+    align-self: stretch;
+    position: relative;
+    line-height: 36px;
+    font-weight: 200;
+    opacity: 0;
+  }
+
+  .stephen-powers-vice {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #18003b;
+  }
+
+  .we-were-already-seeing-early-s-parent {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 20px;
+    background-color: #efeff1;
+    padding: 52px 78px;
+    justify-content: center;
+    gap: 25px;
+    opacity: 0;
+    text-align: center;
+    font-size: var(--font-size-9xl);
+    color: #4e2886;
+  }
+
+  .audi-2nd,
+  .frame-parent,
+  .we-were-already-seeing-early-s-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frame-parent {
+    width: 1172px;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+    font-size: 36px;
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+  }
+  .audi-2nd {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding: var(--padding-11xl) 114px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 1200px) {
+    .concerned-about-an-container {
+      font-weight: 300;
+      font-family: var(--font-raleway);
+      font-size: var(--font-size-3xl);
+      line-height: 30px;
+    }
+    .lean-staffing-and-manual-follo-parent {
+      gap: var(--gap-11xl);
+    }
+    .we-were-already {
+      font-weight: 200;
+      font-family: var(--font-raleway);
+      font-size: var(--font-size-9xl);
+      line-height: 36px;
+    }
+    .we-were-already-seeing-early-s-parent {
+      gap: 20px;
+      padding-left: var(--padding-11xl);
+      padding-right: var(--padding-11xl);
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      align-self: stretch;
+      width: auto;
+      gap: 60px;
+    }
+    .audi-2nd {
+      padding-left: var(--padding-31xl);
+      padding-right: var(--padding-31xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .lean-staffing-and {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .concerned-about-an-container {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .lean-staffing-and-manual-follo-parent {
+      gap: 15px;
+    }
+    .we-were-already {
+      font-size: var(--font-size-3xl);
+      line-height: 30px;
+    }
+    .we-were-already-seeing-early-s-parent {
+      gap: 22px;
+      padding: var(--padding-11xl) 20px;
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      gap: 35px;
+    }
+    .audi-2nd {
+      padding-left: var(--padding-mini);
+      padding-right: var(--padding-mini);
+      box-sizing: border-box;
+    }
+  }
+  
